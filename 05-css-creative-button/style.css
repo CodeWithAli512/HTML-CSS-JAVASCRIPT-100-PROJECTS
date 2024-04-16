@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: sans-serif;
+}
+ a{
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid aqua;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+ }
+ a::before{
+    content: "DOWNLOAD";
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: all .3s;
+
+ }
+ a:hover::before{
+    transform: translateY(0);
+ }
+ a::after{
+    content: "ALI HAIDER";
+    font-weight: bold;
+    background-color: blueviolet ;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translatex(-100%);
+    transition: all .3s .3s;
+
+ }
+ a:hover::after{
+    transform: translatex(0);
+ }

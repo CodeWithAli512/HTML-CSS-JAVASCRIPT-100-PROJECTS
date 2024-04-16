@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            padding: 15px 30px;
+            background-color: purple;
+            color: white;
+            font-size: 23px;
+            position: relative;
+        }
+        a::before{
+            content: "ALI HAIDER";
+            color: white;
+            background-color: black;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform: rotatex( 270deg);
+            transform-origin: top;
+            transition: all .5s  ;
+        }
+        a:hover::before{
+            transform: rotatex(0);
+        }
+        a::after{
+            content: "YA ALI MADAD";
+            font-weight: bold;
+            color: black;
+            background-color: red;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotatex(270deg);
+            transform-origin: top;
+            transition: all .5s .1s linear;
+        }
+        a:hover::after{
+            transform: rotatex(0);
+        }
+    </style>
+</head>
+<body>
+    <a href="#">HOVER ME</a>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.container{
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    transition: all 1s;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: all 1s;
+    background-color: rgb(23, 23, 23);
+    transform: translateX(-100%);
+}
+.container:hover .content{
+    transform: translateY(0);
+}
+.container:hover img{
+    transform: translateX(100%);
+}
