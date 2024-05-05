@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(103, 103, 240);
+}
+
+.container {
+    width: 550px;
+    /* height: 300px; */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+#message-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0px 10px 0px;
+}
+
+form #inputmessage {
+    padding: 5px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    width: 100%;
+    border: none;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+form #submit {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    width: 20%;
+    margin: 20px 0 0 0;
+    background-color: rgb(103, 103, 240);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#submit:active {
+    transform: scale(.9);
+}
+
+.feedback {
+    width: 100%;
+    background-color: rgb(206, 116, 116);
+    font-size: 1.1rem;
+    padding: 5px;
+    font-weight: 900;
+    display: none;
+}
+
+.error {
+    display: block;
+}
+
+
+.Last {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.message-content {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: green;
+}
