@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #24384d;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5rem;
+}
+h2{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: .7rem;
+    letter-spacing: 1px;
+}
+
+h5{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.card{
+    background-color: white;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.imgcard{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+h4{
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+}
+.review{
+    padding-bottom: 1rem;
+}
+
+.star{
+    color: #ff5733;
+    font-size: .8rem;
+}
+
+.btn{
+    color: #ff5733;
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s ease
+}
+
+.btn:hover{
+    background-color: #ff5733;
+    color: white;
+}
+
+.prebtn{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+
+.nextbtn{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+
+
+/* for responsive */
+
+
+@media only screen and (max-width:624px) {
+    .card{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .prebtn{
+        position: absolute;
+        top: 10%;
+        right: 16%;
+    }
+    
+    
+    .nextbtn{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+
+    .btn{
+        color: #ff5733;
+        font-size: 1.4rem;
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+    }
+}
