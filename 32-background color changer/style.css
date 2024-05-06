@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#btn{
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: white;
+    font-weight: 600;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+    border: none;
+    transition: all .3s ease;
+}
+
+#btn:active{
+    transform: scale(.9);
+}
