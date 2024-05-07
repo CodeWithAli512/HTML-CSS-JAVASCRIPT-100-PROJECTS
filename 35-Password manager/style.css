@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#inputfield{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 300px;
+}
+
+#inputfield:focus{
+    outline: none;
+}
+
+#output{
+    margin-top: 10px;
+    font-size: .9rem;
+}
