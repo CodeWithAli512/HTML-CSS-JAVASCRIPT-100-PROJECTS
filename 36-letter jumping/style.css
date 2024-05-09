@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    cursor: pointer;
+}
+
+span{
+    font-size: 5rem;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    /* font-size: 11rem; */
+}
+
+span.active{
+    animation: jump 2s ease-in-out;
+}
+
+@keyframes jump {
+    0%{
+        transform: translate(0, 0) rotate(180deg);
+    }
+    100%{
+        transform: scale(2.5) translate(0, -150px);
+    }
+    
+}
